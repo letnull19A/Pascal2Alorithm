@@ -1,0 +1,8 @@
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\bin\Debug\Pascal2Algorithm.exe.config
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\bin\Debug\Pascal2Algorithm.exe
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\bin\Debug\Pascal2Algorithm.pdb
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.csproj.AssemblyReference.cache
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.csproj.SuggestedBindingRedirects.cache
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.csproj.CoreCompileInputs.cache
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.exe
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.pdb
