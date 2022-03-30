@@ -1,0 +1,18 @@
+// задание 2 вариант 7
+
+алг prog (арг <__args__>);
+				var i, n : integer;
+				var x, res : real;
+Begin
+
+		 вывод Введите x);
+		 Readln(x);
+		 вывод Введите n);
+		 Readln(n);
+
+		нц для i от 1 до n шаг 1
+				 res:= res + (1 / (power(x, 2) + power(i, 3)));
+		кц
+		
+		вывод Результат: ', res
+End.

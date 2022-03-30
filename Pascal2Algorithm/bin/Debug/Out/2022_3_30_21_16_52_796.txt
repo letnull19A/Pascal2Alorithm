@@ -1,0 +1,33 @@
+алг prog (арг <__args__>);
+	var 
+		originArray : array of integer;
+		length, i, min, max, number, index : integer;
+		message : string;
+begin
+	
+	min:= -20;
+	max:= 50;
+	
+	вывод Введите длину массива;
+	Readln(length);
+	
+	SetLength(originArray, length);
+	
+	вывод Сгенерированный массив;
+	нц для i от 0 до l шаг 1
+		originArray[i]:= Random(min, max);
+	end;
+	
+	вывод ведите целое число;
+	Readln(number);
+	
+	for i:= 0 to length - 1 do
+	begin
+		если (number = originArray[i]) то
+		
+		message:= message + originArray[i] + ' ';
+	кц
+	вывод essage
+	вывод 'Число {number} в массиве имеет индекс: {index;
+	
+endвсё

@@ -1,0 +1,16 @@
+// ������� 1 ������� 5
+
+алг prog2 (арг <__args__>);
+var i,n,k:integer;
+var a: real;
+begin
+a:=1;
+writeln('������� �����');
+readln(n);
+writeln('������� �����');
+readln(k);
+нц для i от 1 до n шаг 1
+a:=a*(power(k,i));
+кц
+writeln(a);
+end.

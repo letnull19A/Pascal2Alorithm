@@ -6,3 +6,6 @@ D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.cs
 D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.csproj.CoreCompileInputs.cache
 D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.exe
 D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.pdb
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\bin\Debug\Newtonsoft.Json.dll
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\bin\Debug\Newtonsoft.Json.xml
+D:\Others\source\Pascal2Algorithm\Pascal2Algorithm\obj\Debug\Pascal2Algorithm.csproj.CopyComplete

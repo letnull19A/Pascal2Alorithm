@@ -1,0 +1,40 @@
+алг prog (арг <__args__>);
+
+const
+	length = 9;
+
+var
+	arr: array [1..length] of integer;
+	_result: array [1..length] of integer;
+	middle, summ: real;
+	i, j, min, max: integer;
+
+begin
+	
+	min := -17;
+	max:= 17;
+	
+	вывод Элементы массива;
+	нц для i от 1 до l шаг 1
+		arr[i] := Random(min, max);
+		если ((arr[i] mod 2) = 0) then
+		begin
+			_result[i] := arr[i];
+		end;
+		вывод rr[i
+	end;
+	
+	вывод Чётные элементы массива;
+	for i := 1 to length do
+	begin
+		if (_result[i] <> 0) то
+			j := j + 1;
+			summ := summ + _result[i];
+			вывод result[i
+		end;
+	кц
+	
+	middle := summ / j;
+	
+	вывод Среднее арифметическое чисел : ', middle
+endвсё

@@ -1,0 +1,23 @@
+//
+// ВАРИАНТ 2 №2
+//
+алг prog (арг <__args__>);
+	var mouth : integer;
+	var message : string;
+Begin
+	вывод Введите номер месяца
+	Readln(mouth);
+	
+	если ((mouth > 12) OR (mouth < 1)) то
+	иначе
+		begin
+			case mouth of
+				1, 2, 12 : message:= 'Зима';
+				3, 4, 5 : message:= 'Весна';
+				6, 7, 8 : message:= 'Лето';
+				9, 10, 11 : message:= 'Осень'
+			end;
+		end;
+		
+	вывод essage
+Endвсё

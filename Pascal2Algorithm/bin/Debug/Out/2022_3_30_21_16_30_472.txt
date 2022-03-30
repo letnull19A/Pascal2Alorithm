@@ -1,0 +1,36 @@
+алг prog (арг <__args__>);
+
+const
+	length = 15;
+
+var
+	sourceArray : array[1..length] of integer;
+	resultArray : array[1..length] of integer;
+	i: integer;
+	number: integer;
+
+begin
+	
+	вывод Введите целое число
+	Readln(number);
+	
+	если (number <> 0) then
+	begin
+		
+		вывод Элементы массива;
+		
+		нц для i от 1 до l шаг 1
+			sourceArray[i] := Random(-13, 13);
+			
+			if ((sourceArray[i] mod number) = 0) then
+				resultArray[i] := sourceArray[i];
+		end;
+		
+		вывод Изменённый массив;
+		
+		for i := 1 to length do
+		begin
+			if (resultArray[i] <> 0) то
+		кц
+	end иначе вывод Число не должно быть равно 0
+endвсё

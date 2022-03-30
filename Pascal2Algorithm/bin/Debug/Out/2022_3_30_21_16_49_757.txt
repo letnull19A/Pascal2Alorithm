@@ -1,0 +1,85 @@
+алг prog (арг <__args__>);
+
+const
+	length = 6;
+
+var
+	title, message, answer, userName: string;
+	// Вопросы которые задаёт компьютер
+	questions: array[1..length] of string := ('Как Вас зовут?', 'Вы читаете книги?', 'Вы любите заниматься спортом?', 'Вам нравится', 'Вы любите играть в игры?', '');
+	// Два варианта на ответ пользователя: положительный и отрицательный
+	// Там где ? это значит начало, а - означает конец диалога и что ответ от компьютера будет один
+	answerPositive: array[1..length] of string := ('?', 'Это хорошо!', 'Правильно! Без спорта некуда!', 'Понимаю Ваши предпочтения', 'Отлично и я', '-');
+	answerNegative: array[1..length] of string := ('?', 'Это плохо(', 'Я был о Вас другого мнения...', 'У каждого разные вкусы', 'Понимаю Ваши предпочтения', '-');
+	// В этом массиве мы задаём параметры на использование имя пользователя
+	useName: array[1..length] of boolean := (false, true, false, true, false, false);
+	// Массив из названий цветов для дальнеёшего рандома
+	favoriteColor: array[1..6] of string := ('Зелёный', 'Жёлтый', 'Фиолетовый', 'Черный', 'Красный', 'Голубой');
+	i: integer;
+
+begin
+	
+	title := '[COMPUTER] ';
+	answer := '!!';
+	userName := 'NoName';
+	
+	вывод Диалог с компьютером
+	вывод 1 - это да
+	вывод 0 - это нет
+	
+	нц для i от 1 до l шаг 1
+		
+		// Спрашиваем как зовут пользователя
+		если ((answerPositive[i] = '?') and (answerNegative[i] = '?') and (userName = 'NoName')) then
+		begin
+			message := title + questions[i];
+			
+			вывод essage
+			Readln(userName);
+			
+		end
+		иначе
+		begin
+			
+			// Сдесьрандомим цвет и спрашиваем нравится ли он.
+			// i - это индекс где мы будем спрашивать
+			if (i = 4) then
+			begin
+				if (useName[i]) then
+					message := title + userName + ', ' + questions[i] + ' ' + favoriteColor[Random(4) + 1] + ' цвет?'
+				иначе
+					message := title + questions[i] + favoriteColor[Random(1, 6)] + ' цвет?'
+			end
+			иначе
+			begin
+				if (useName[i]) then
+					message := title + userName + ', ' + questions[i]
+				иначе
+					message := title + questions[i];
+			end;
+			
+			if ((answerNegative[i] <> '-') and (answerPositive[i] <> '-')) then
+			begin
+				вывод essage
+				Readln(answer);
+			end
+			иначе
+			begin
+				answer := '!!';
+				message := title + 'Было приятно с Вами общаться, ещё увидимся!';
+			end;
+			
+			// Если !! то мы не будем ожидать от пользователя ответа
+			if (answer <> '!!') then
+			begin
+				if (answer = '0') то
+				иначе
+					message := title + answerPositive[i];
+			end;
+			
+			// Выводим сообщения
+			
+			вывод essage
+		end;
+	кц
+endвсё

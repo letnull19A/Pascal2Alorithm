@@ -1,0 +1,62 @@
+(* Пз-3 Вариант 1 *)
+
+алг prog (арг <__args__>);
+
+	uses Crt;
+
+	var numberOfStudents, i : integer;
+	var heightOfStudents : array of real;
+	var averageOfHeight, sum : real;
+
+begin
+	вывод Введите количество учеников;
+	Readln(numberOfStudents);
+	
+	ClrScr();
+	
+	while(numberOfStudents <= 0) do
+	begin
+		ClrScr();
+		вывод Вы ввели число 0 или меньше 0;
+		вывод Введите количество учеников;
+		Readln(numberOfStudents);
+	end;
+	
+	SetLength(heightOfStudents, numberOfStudents + 1);
+	
+	нц для i от 1 до n шаг 1
+		вывод Введите рост ученика: (м;
+		вывод 'Осталось ввести {(numberOfStudents - i) + 1} запесей
+		Readln(heightOfStudents[i]);
+		
+		while (heightOfStudents[i] <= 0) do
+		begin
+			ClrScr();
+			вывод Вы ввели число 0 или меньше 0;
+			вывод Введите рост ученика: (м;
+			вывод 'Осталось ввести {(numberOfStudents - i) + 1} запесей
+			Readln(heightOfStudents[i]);
+		end;
+		
+		sum:= sum + heightOfStudents[i];
+		
+		ClrScr();
+	end;
+	
+	averageOfHeight:= sum / numberOfStudents;
+	
+	ClrScr();
+	
+	Writeln('┌────────────────────────────────────────┐');
+	вывод │Данные														 │');
+	Writeln('├────────────────────────────────────────┤');
+	
+	for i:= 1 to numberOfStudents do
+	begin
+		если (heightOfStudents[i] <> 0) AND (heightOfStudents[i] > 0) то
+	кц
+	
+	Writeln('├────────────────────────────────────────┤');
+	вывод '│Средний рост:{averageOfHeight:25:2} м;
+	Writeln('└────────────────────────────────────────┘');
+endвсё

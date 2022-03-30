@@ -1,0 +1,49 @@
+алг abc (арг <__args__>);
+ const length = 5;
+ var 
+	sourceArray : array[1..length] of integer;
+	readyArray : array[1..length] of integer;
+	i, min, max, counter : integer;
+ 
+ Begin
+ 
+	counter:= 1;
+ 
+	вывод Введите минимальное значение масива
+	Readln (min);
+	вывод Введите максимальное значение масива
+	Readln (max);
+	
+	вывод Исходный массив;
+ 
+	нц для i от 1 до L шаг 1
+		sourceArray[i]:= Random(min, max);
+		вывод '[{i}] {sourceArray[i);
+	end;
+	
+	for i:=1 to length do 
+	begin
+	
+		если (((i mod 2) = 0) AND (i < length)) то
+		
+			readyArray[counter]:= sourceArray[i];
+			Inc(counter);
+		end;
+	end;
+	
+	вывод Готовые массивы;
+	
+	for i:= 1 to length do
+	begin
+		вывод '[{i}] {readyArray[i);
+	end;
+	
+	вывод Исходный массив после обработки;
+	
+	for i:= 1 to length do
+	begin
+		вывод '[{i}] {sourceArray[i);
+	кц
+	
+	
+ Endвсё

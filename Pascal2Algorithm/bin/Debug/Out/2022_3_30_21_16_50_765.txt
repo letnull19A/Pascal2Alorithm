@@ -1,0 +1,34 @@
+алг prog (арг <__args__>);
+	var 
+		originArray : array of integer;
+		length, i, min, max, counter, sum : integer;
+		average : real;
+		message : string;
+begin
+	
+	min:= -20;
+	max:= 50;
+	
+	вывод Введите длину массива;
+	Readln(length);
+	
+	SetLength(originArray, length);
+	
+	вывод 'Исходный массив: ({length);
+	нц для i от 0 до l шаг 1
+		originArray[i]:= Random(min, max);
+		message:= message + originArray[i] + ' ';
+		
+		если (originArray[i] <> 0) то
+			Inc(counter);
+			sum:= sum + originArray[i];
+		end;
+		
+	кц
+	
+	average:= sum / counter;
+	
+	вывод essage
+	вывод 'Среднее арифметическое не нулевых элементов: {average;
+	
+endвсё

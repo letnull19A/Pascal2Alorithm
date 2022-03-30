@@ -1,0 +1,5 @@
+алг prog (арг <__args__>);
+
+Begin
+	
+end.

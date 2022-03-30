@@ -1,0 +1,20 @@
+алг prog (арг <__args__>);
+	var a, b : real;
+	var isTrue : boolean;
+	var _result : string;
+Begin
+	вывод Введите число a
+	Readln(a);
+	вывод Введите число b
+	Readln(b);
+	
+	isTrue:= (a > 2) AND (b < 3);
+	
+	//_result:= isTrue ? 'Всё по условию A > 2 и B < 3' : 'Всё не поусловию A > 2 и B < 3 ';
+	
+	если (isTrue) то
+	иначе
+		_result:= 'Всё не поусловию A > 2 и B < 3 ';
+	
+	вывод result
+Endвсё

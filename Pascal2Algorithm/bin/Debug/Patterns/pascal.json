@@ -1,0 +1,11 @@
+{
+  "integer": "цел",
+  "real": "вещ",
+  "boolean": "лог",
+  "char": "сим",
+  "string": "лит",
+  "program {name};": "алг {name} (арг {variables})",
+  "if {condition} then": "если {condition} \nто",
+  "else": "иначе то",
+  "while ({condition})": "нц пока {condition}"
+}

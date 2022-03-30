@@ -1,0 +1,25 @@
+алг prog (арг <__args__>);
+
+	var a : array[1..6] of integer;
+	var i, j, Min, MinI : integer;
+
+begin
+	
+	нц для i от 1 до 5 шаг 1
+		Min:= a[i];
+		MinI:= i;
+		
+		for j:= i + 1 to 6 do
+		begin
+			если (a[j] < Min) то
+				Min:= a[j];
+				MinI:= j;
+			end;
+		end;
+		
+		a[MinI]:= a[i];
+		a[i]:= Min;
+		
+	кц
+	
+endвсё

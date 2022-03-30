@@ -1,0 +1,40 @@
+алг prog (арг <__args__>);
+
+	const
+		length = 16;
+
+	var 
+		randomazeArray : array[1..length] of integer;
+		randomMin, randomMax, positives, i, sum : integer;
+begin
+	
+	randomMin:= -14;
+	randomMax:= 14;
+	
+	вывод Исходный массив;
+	
+	нц для i от 1 до l шаг 1
+		randomazeArray[i]:= Random(randomMin, randomMax);
+		
+		вывод '[{i}] {randomazeArray[i);
+		
+		если (randomazeArray[i] > 0) then
+		begin 
+			Inc(positives);
+			sum:= sum + randomazeArray[i];
+		end;
+		
+	end;
+	
+	вывод Обработанный массив;
+	
+	for i:= 1 to length do
+	begin
+		if ((randomazeArray[i] mod 2) = 0) то
+		
+		вывод '[{i}] {randomazeArray[i);
+	кц
+	
+	вывод 'Среднее арифметическое положительных чисел: {sum / positives;
+	
+endвсё

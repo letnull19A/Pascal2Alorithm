@@ -1,0 +1,40 @@
+алг prog (арг <__args__>);
+
+	const
+		length = 15;
+
+	var 
+		randomazeArray : array[1..length] of integer;
+		randomMin, randomMax, positives, negatives, i : integer;
+begin
+	
+	randomMin:= -18;
+	randomMax:= 18;
+	
+	вывод Исходный массив;
+	
+	нц для i от 1 до l шаг 1
+		randomazeArray[i]:= Random(randomMin, randomMax);
+		
+		вывод '[{i}] {randomazeArray[i);
+		
+		если (randomazeArray[i] > 0) then 
+			Inc(positives) 
+		иначе 
+			Inc(negatives);
+		
+	end;
+	
+	вывод Обработанный массив;
+	
+	for i:= 1 to length do
+	begin
+		if (randomazeArray[i] < 0) то
+		
+		вывод '[{i}] {randomazeArray[i);
+	кц
+	
+	вывод 'Положительные: {positives;
+	вывод 'Отрицательные: {negatives;
+	
+endвсё

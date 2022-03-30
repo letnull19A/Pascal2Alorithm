@@ -1,0 +1,18 @@
+алг prog (арг <__args__>);
+	var a, b, _result0, _result1 : integer;
+Begin;
+	a:= Random(99) + 1;
+	b:= Random(99) + 1;
+	
+	если (a > b) то
+			_result0:= a;
+			_result1:= b
+		end
+	иначе 
+		begin
+			_result1:= a;
+			_result0:= b;
+		end;
+	
+	вывод result0, ', ', _result1
+endвсё

@@ -1,0 +1,34 @@
+алг prog (арг <__args__>);
+
+	const
+		length = 10;
+		
+	var
+		matrix : array[1..length] of array[1..length] of integer;
+		min, max, countNegative, countPositive, i, j, sum : integer;
+
+begin
+	
+	min:= -12;
+	max:= 12;
+	
+	вывод 'Исходный массив ({length}x{length);
+	
+	нц для i от 1 до l шаг 1
+		for j:= 1 to length do
+		begin
+			matrix[i, j]:= Random(min, max);
+			Write(matrix[i, j]:4);
+			если (matrix[i, j] >= 0) то
+				Inc(countPositive);
+				sum:= sum + matrix[i, j];
+			end иначе Inc(countNegative);
+			
+		end;
+		Writeln();
+	кц
+	
+	вывод 'Среднее арифметическое значение положительных элементов: {sum / countPositive;
+	вывод 'Отрицательных: {countNegative
+	
+endвсё

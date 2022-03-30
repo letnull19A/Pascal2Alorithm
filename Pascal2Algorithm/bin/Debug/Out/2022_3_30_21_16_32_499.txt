@@ -1,0 +1,38 @@
+алг wnd (арг <__args__>);
+
+const
+	length = 10;
+
+var
+	ArrayA: array[1..length] of integer; 
+	ArrayB: array[1..length] of integer;
+	min, max, i, counter: integer;
+
+begin
+	вывод Введите минимальное значение масива
+	Readln(min);
+	вывод Введите максимальное значение масива
+	Readln(max);
+	вывод Сгенерированные элементы массива;
+	
+	counter := 1;
+	
+	нц для i от 1 до l шаг 1
+		ArrayA[i] := Random(min, max);
+		
+		вывод '[{i}] {ArrayA[i);
+		
+		если ((ArrayA[i] mod 2) <> 0) то
+			ArrayB[counter] := ArrayA[i];
+			Inc(counter);
+		end;
+		
+	end;
+	
+	вывод Готовый массив;
+	
+	for i:= 1 to length do
+	begin
+		вывод '[{i}] {ArrayB[i);
+	кц
+end.всё

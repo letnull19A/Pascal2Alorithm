@@ -1,0 +1,27 @@
+алг prog (арг <__args__>);
+	var _input : integer;
+	var _result : string;
+Begin
+	вывод Введите число от 1 до 10
+	Readln(_input);
+	
+	если ((_input > 0) AND (_input < 11)) то
+		case _input of
+			1 : _result:= 'I';
+			2 : _result:= 'II';
+			3 : _result:= 'III';
+			4 : _result:= 'IV';
+			5 : _result:= 'V';
+			6 : _result:= 'VI';
+			7 : _result:= 'VII';
+			8 : _result:= 'VIII';
+			9 : _result:= 'IX';
+			10 : _result:= 'X';
+		end;
+		вывод Результат: ', _input, ' => ', _resul
+	end иначе 
+		begin
+			вывод Вы ввели число больше 10 или меньше 1
+			Readln(_input);
+		end;
+Endвсё

@@ -1,0 +1,22 @@
+//
+// ВАРИАНТ 1 №1
+//
+алг prog (арг <__args__>);
+	uses Crt;
+	var brotherAge, sisterAge, deltaAge : integer;
+	var message : string;
+Begin
+	вывод Введите возраст сестры
+	Readln(sisterAge);
+	ClrScr;
+	вывод Введите возраст брата
+	Readln(brotherAge);
+	ClrScr;
+	
+	deltaAge:= abs(brotherAge - sisterAge);
+	
+	если (deltaAge = 0) то
+	иначе message:= (brotherAge > sisterAge) ? 'Брат страше сестры на ' : 'Сестра старше брата на ';
+	
+	вывод essage + deltaAge.ToString;
+Endвсё

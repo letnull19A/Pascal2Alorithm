@@ -1,0 +1,39 @@
+алг prog (арг <__args__>);
+
+const
+	length = 11;
+
+var
+	min, max: integer;
+	arr: array[1..length] of integer;
+	arrResult: array[1..length] of integer;
+	i, _result: integer;
+
+begin
+	min := -15;
+	max := 15;
+	
+	вывод Исходный массив
+	
+	нц для i от 1 до l шаг 1
+		
+		arr[i] := Random(min, max);
+		
+		вывод rr[i
+		
+		если ((i mod 2) = 0) then
+			arrResult[i] := arr[i];
+	end;
+	
+	вывод Изменённый массив
+	
+	for i := 1 to length do
+	begin
+		if ((arrResult[i] <> 0) AND ((i + 1) < length)) то
+			_result := (arrResult[i] > arrResult[i + 1]) ? arrResult[i] : arrResult[i + 1];
+			вывод rrResult[i
+		end;
+	кц
+	
+	вывод Результат: ', _result
+endвсё

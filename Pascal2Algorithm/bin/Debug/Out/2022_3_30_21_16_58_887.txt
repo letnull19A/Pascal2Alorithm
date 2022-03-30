@@ -1,0 +1,72 @@
+алг prog (арг <__args__>);
+
+	var
+		originalArray : array[1..50] of array[1..50] of integer;
+		bufferMax, bufferMin : array[1..50] of integer;
+		i, j, length, minValue, maxValue, minIndex, maxIndex : integer;
+
+begin
+	
+	вывод Введите длину двумерного массива < 50
+	Readln(length);
+	
+	вывод Исходный массив
+	
+	нц для i от 1 до l шаг 1
+		for j:= 1 to length do
+		begin
+			originalArray[i, j]:= Random(-12, 12);
+			Write(originalArray[i, j]:4);
+		end;
+		Writeln();
+	end;
+	
+	for i:= 1 to length do
+	begin
+		
+		for j:= 1 to length do
+		begin
+			
+			если (originalArray[i, j] > maxValue) then
+			begin
+				maxValue:= originalArray[i, j];
+				maxIndex:= i;
+			end;
+			
+			if (originalArray[i, j] < minValue) то
+				minValue:= originalArray[i, j];
+				minIndex:= i;
+			end;
+			
+		end;
+	end;
+	
+	for i:= 1 to length do
+	begin
+		bufferMax[i]:= originalArray[maxIndex, i];
+		bufferMin[i]:= originalArray[minIndex, i];
+	end;
+	
+	for i:= 1 to length do
+	begin
+		for j:= 1 to length do
+		begin
+			originalArray[maxIndex, i]:= bufferMin[i];
+			originalArray[minIndex, i]:= bufferMax[i];
+		end;
+	end;
+	
+	вывод '[{minIndex}] Min {minValue} [{maxIndex}]Max {maxValue;
+	
+	вывод Результативный массив;
+	
+	for i:= 1 to length do
+	begin
+		for j:= 1 to length do
+		begin
+			Write(originalArray[i, j]:4);
+		end;
+		Writeln();
+	кц
+	
+endвсё

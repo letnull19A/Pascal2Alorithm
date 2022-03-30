@@ -1,0 +1,11 @@
+алг Boolean1 (арг <__args__>);
+Var
+A:Integer;
+c:boolean;
+Begin
+ //Cls;
+ ReadLn(A);
+ if(A > 0) then c:=true иначе c:=false;
+ write ('число , А, ’ является положительным-это ');
+ write (c);
+End.

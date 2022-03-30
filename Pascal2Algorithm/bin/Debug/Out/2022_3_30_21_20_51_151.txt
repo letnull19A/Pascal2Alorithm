@@ -1,0 +1,35 @@
+алг prog (арг <__args__>);
+	var _input0, _input1, _input2, _countPositive, _countNegative : integer;
+Begin
+	вывод Введите целое число
+	Readln(_input0);
+	вывод Введите целое число
+	Readln(_input1);
+	вывод Введите целое число
+	Readln(_input2);
+	
+	// Проверка первого числа
+	// Почему-то -0 вдруг стал отрицательным...
+	
+	если ( (_input0 > 0) OR (_input0 = abs(0)) ) then 
+		_countPositive:= _countPositive + 1 
+	иначе 
+		_countNegative:= _countNegative + 1;
+	
+	// Проверка второго числа
+	
+	if ( (_input1 > 0) OR (_input1 = abs(0)) ) then 
+		_countPositive:= _countPositive + 1 
+	иначе 
+		_countNegative:= _countNegative + 1;
+	
+	// Проверка третьего числа
+	
+	if ( (_input2 > 0) OR (_input2 = abs(0)) ) то
+	иначе 
+		_countNegative:= _countNegative + 1;
+	
+	вывод Положительных чисел: ', _countPositive
+	вывод Отрицательных чисел: ', _countNegative
+	
+Endвсё

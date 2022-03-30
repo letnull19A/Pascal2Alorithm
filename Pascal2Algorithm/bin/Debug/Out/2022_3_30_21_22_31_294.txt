@@ -1,0 +1,31 @@
+//
+// ВАРИАНТ 3 №1
+//
+алг prog (арг <__args__>);
+	var x, y, bufferX, bufferY : real;
+Begin
+	x:= Random;
+	y:= Random;
+	
+	если (x = y) then x:= Random;
+	
+	bufferX:= x;
+	bufferY:= y;
+	
+	if (bufferX < bufferY) then 
+		x:= (x + y) / 2 
+	иначе 
+		y:= (x + y) / 2;
+	
+	if (bufferX > bufferY) то
+	иначе
+		y:= (x * y) * 2;
+	
+	вывод Сгенерированы числа;
+	Writeln(x);
+	Writeln(y);
+	вывод Результат;
+	вывод x: ' + x.ToString;
+	вывод y: ' + y.ToString;
+	
+Endвсё

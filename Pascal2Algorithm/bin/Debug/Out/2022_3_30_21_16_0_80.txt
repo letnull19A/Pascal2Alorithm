@@ -1,0 +1,13 @@
+алг prog (арг <__args__>);
+	var _input, _result : integer;
+Begin
+	вывод Введите любое целое число
+	Readln(_input);
+	
+	если (_input > 0) то
+	иначе
+		_result:= _input;
+	
+	вывод result
+	
+Endвсё

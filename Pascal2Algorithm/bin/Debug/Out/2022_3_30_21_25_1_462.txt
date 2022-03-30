@@ -1,0 +1,18 @@
+// ������� 1 ������� 7
+
+алг prog (арг <__args__>);
+				var i, n : integer;
+				var x, res : real;
+Begin
+
+		 вывод ������� x);
+		 Readln(x);
+		 вывод ������� n);
+		 Readln(n);
+
+		нц для i от 1 до n шаг 1
+				 res:= res + (x - i);
+		кц
+
+		вывод ���������: ', res
+End.

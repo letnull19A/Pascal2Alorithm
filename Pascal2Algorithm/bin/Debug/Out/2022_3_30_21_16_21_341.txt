@@ -1,0 +1,31 @@
+// ������� 2 ������� 1
+
+алг mvp (арг <__args__>);
+ var i, n, buffer_z, resMex, resIndex : integer;
+begin
+
+		 Writeln ('������ ����� ��� ������');
+		 Readln (n);
+
+		 while (n <> 0) do
+		 begin
+					i:= i + 1;
+					
+					buffer_z:= n;
+					Writeln('������ �����');
+					Readln(n);
+					
+					если (n > buffer_z) то
+							resMex:= n;
+							resIndex:= i;
+					end
+					иначе
+					begin
+							 resMex:= buffer_z;
+							 resIndex:= i;
+					end;
+
+		 end;
+		 
+		 вывод ���������:', resMex, ' ', resIndex
+end.всё

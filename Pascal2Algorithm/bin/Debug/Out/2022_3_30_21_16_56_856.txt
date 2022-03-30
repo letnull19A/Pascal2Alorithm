@@ -1,0 +1,24 @@
+алг prog (арг <__args__>);
+	
+	var
+		days : array[1..7] of string := ('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
+		i, sum : integer;
+		temperature : array[1..7] of integer;
+	
+begin
+	вывод Введите данные температур;
+	
+	нц для i от 1 до 7 шаг 1
+		вывод Температура воздуха в ' + days[i
+		Readln(temperature[i]);
+		sum:= sum + temperature[i];
+	end;
+	
+	for i:= 1 to 7 do
+	begin
+		вывод '{days[i]:11:0}{temperature[i]:7:0;
+	кц
+	
+	вывод 'Средняя температура:{(sum / 7):4:0} градусов
+	
+end.

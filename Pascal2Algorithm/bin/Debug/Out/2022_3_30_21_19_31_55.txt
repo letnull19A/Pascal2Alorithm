@@ -1,0 +1,18 @@
+алг prog (арг <__args__>);
+	var _input : integer;
+Begin
+	вывод Введите целое число от 1 до 9
+	Readln(_input);
+	
+	если ((_input > 0) AND (_input < 10)) то
+			case _input of
+				1: вывод Мне ', _input, ' год
+				0, 5, 6, 7, 8, 9: вывод Мне ', _input, ' лет
+				2, 3, 4: вывод Мне ', _input, ' года
+			end
+	end иначе
+		begin
+			вывод Вы ввели число больше или меньше диапазона [1; 9;
+			Readln(_input);
+		end;
+Endвсё

@@ -1,0 +1,13 @@
+алг prog (арг <__args__>);
+	const size = 15;
+	var arr : array[1..size] of integer;
+	var positivs : array[1..size] of integer;
+	var i : integer;
+Begin
+	
+	нц для i от 1 до s шаг 1
+		arr[i]:= Random(-13, 13);
+		positivs[i]:= (arr[i] > 0) ? arr[i] : 0;
+	кц
+	
+end.

@@ -1,0 +1,36 @@
+//
+// ВАРИАНТ 4 №1
+//
+алг prog (арг <__args__>);
+	uses Crt;
+	var currentMinutes, normalMinutes : integer;
+	var priceNormal, priceUnNormal, finalTimeNormal, deltaMinutes : real;
+Begin
+	вывод Установите норму в минутах);
+	Readln(normalMinutes);
+	ClrScr();
+	
+	вывод Установите стоимость по норме;
+	Readln(priceNormal);
+	ClrScr;
+	
+	вывод Установите стоимость по сверх норме;
+	Readln(priceUnNormal);
+	ClrScr;
+	
+	вывод Введите использованое время (мин);
+	Readln(currentMinutes);
+	ClrScr;
+	
+	finalTimeNormal:= (currentMinutes <= normalMinutes) ? currentMinutes : normalMinutes;
+	deltaMinutes:= ((currentMinutes - finalTimeNormal) > 0) ? (currentMinutes - finalTimeNormal) : 0;
+	
+	вывод Итого к оплате;
+	вывод Стоимость по норме:	 ' + priceNormal.ToString;
+	вывод Стоимость вне нормы:	' + priceUnNormal.ToString;
+	вывод Лимит в минутах:			' + normalMinutes.ToString;
+	вывод Потрачено в минутах:	' + currentMinutes.ToString;
+	вывод Оплата по норме:			' + (finalTimeNormal * priceNormal).ToString;
+	вывод Оплата вне нормы:		 ' + (deltaMinutes * priceUnNormal).ToString;
+	вывод Итого:								' + ((finalTimeNormal * priceNormal) + (deltaMinutes * priceUnNormal)).ToString;
+End.

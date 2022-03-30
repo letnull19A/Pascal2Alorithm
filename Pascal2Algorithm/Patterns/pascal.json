@@ -1,0 +1,9 @@
+{
+  "integer": "цел",
+  "real": "вещ",
+  "boolean": "лог",
+  "char": "сим",
+  "string": "лит",
+  "program {name};": "алг {name} (арг {variables})",
+  "^(for).(?<parametr>[^for\\s])\\s*(:=)\\s*(?<start>[0-9a-zA-Z])\\s*(to)\\s(?<end>\\d*[0-9a-zA-Z])\\s\\w*((\\nbegin)|(\\s*begin))\\n*(?<code>((\\w|\\W)*))\\w*(end)": "нц для ${parametr} от ${start} до ${end} шаг 1\n${code}кц"
+}

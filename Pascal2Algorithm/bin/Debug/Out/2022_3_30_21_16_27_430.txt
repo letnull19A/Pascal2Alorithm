@@ -1,0 +1,20 @@
+// задание 1 вариант 3
+
+алг prog21124 (арг <__args__>);
+var i,n:integer;
+var r,x:real;
+begin
+writeln('Введите n');
+readln(n);
+writeln('Введите x');
+readln(x);
+нц для i от 1 до n шаг 1
+r:=r+(1/(power(x,3)*power(i,2)));
+кц
+writeln('Результат ',r);
+
+
+
+
+
+end.

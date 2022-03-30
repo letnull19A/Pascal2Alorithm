@@ -1,0 +1,18 @@
+алг prog (арг <__args__>);
+
+	var
+		number,i : integer;
+
+begin
+	
+	number:= -1;
+	
+	while (not((number > 31) and (number < 126))) do
+	begin
+		вывод Введите число от 32 до 126;
+		Readln(number);
+	end;
+	
+	вывод '[{number}]	 {Chr(number');
+	
+end.

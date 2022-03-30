@@ -1,0 +1,23 @@
+алг prog (арг <__args__>);
+
+	var
+		message : string;
+		i, j : integer;
+
+begin
+	
+	вывод Введите строку;
+	Readln(message);
+	
+	нц для i от 1 до L шаг 1
+		
+		for j:= 0 to 9 do
+		begin
+			
+			
+			
+		end;
+		
+	кц
+	
+end.

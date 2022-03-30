@@ -1,0 +1,17 @@
+// ������� 1 ������� 2
+
+алг prog (арг <__args__>);
+		var n, i : integer;
+		var r, x : real;
+Begin
+		 вывод ������� ����� n
+		 Readln(n);
+		 вывод ������� ����� x
+		 Readln(x);
+		 
+		 нц для i от 0 до n шаг 1
+					r:= r + power(x, i) + n;
+		 кц
+		 
+		 вывод ���������: ', r
+End.

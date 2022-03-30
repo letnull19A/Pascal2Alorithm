@@ -1,0 +1,11 @@
+алг prog (арг <__args__>);
+	var 
+		symbol : char;
+		
+begin
+	
+	вывод Введите символ;
+	Read(symbol);
+	
+	вывод 'Результат: {Ord(symbol);
+end.

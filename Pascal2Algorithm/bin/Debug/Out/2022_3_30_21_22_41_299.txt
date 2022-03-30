@@ -1,0 +1,36 @@
+//
+// ВАРИАНТ 3 №2
+//
+алг prog (арг <__args__>);
+	var mouth, buffer : Integer;
+	var mouthName : string;
+Begin
+	вывод Введите месяц
+	Readln(mouth);
+	
+	buffer:= mouth;
+	если (mouth > 12) then 
+		mouth:= 1 
+	иначе 
+		Inc(mouth);
+	
+	if (mouth > 0) AND (mouth < 12) то
+		case mouth of
+			1 : mouthName:= 'Январь';
+			2 : mouthName:= 'Февраль';
+			3 : mouthName:= 'Март';
+			4 : mouthName:= 'Апрель';
+			5 : mouthName:= 'Май';
+			6 : mouthName:= 'Июнь';
+			7 : mouthName:= 'Июль';
+			8 : mouthName:= 'Август';
+			9 : mouthName:= 'Сентябрь';
+			10 : mouthName:= 'Октябрь';
+			11 : mouthName:= 'Ноябрь';
+			12 : mouthName:= 'Декабрь'
+		end;
+	end;
+	
+	вывод Месяц: ' + buffer.ToString;
+	вывод Следующий месяц: ' + mouthName
+Endвсё

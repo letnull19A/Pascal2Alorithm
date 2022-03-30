@@ -1,0 +1,64 @@
+алг prog (арг <__args__>);
+	var a, b, c : integer;
+	var isEven : boolean;
+Begin
+	вывод Введите a
+	Readln(a);
+	вывод Введите b
+	Readln(b);
+	вывод Введите c
+	Readln(c);
+	
+	если ((a mod 2) = 0) then 
+		begin
+			вывод Число a является чётным
+			isEven:= true;
+		end;
+	if ((b mod 2) = 0) then
+		begin
+			вывод Число b является чётным
+			isEven:= true;
+		end;
+	if ((c mod 2) = 0) then
+		begin
+			вывод Число c является чётным
+			isEven:= true;
+		end;
+	
+	if (isEven) then
+		begin
+			// Вычисляем большее
+			// Число a большевсех?
+			if ((a > b) AND (a > c)) then 
+				begin
+					// Да!
+					вывод Большее число это a
+				end
+				// Нет? - Странно...
+			иначе if ((b > a) AND (b > c)) then
+				begin
+					вывод Большее число это b
+				end
+				// А на этот раз? Ну давай же!
+			иначе if ((c > a) AND (c > b)) then
+				begin
+					вывод Большее число это c
+				end;
+		end
+	иначе begin
+			// Вычисляем меньшее
+			// Что там по a-шке?
+			вывод Тут чётных чисел нет;
+			if ((a < b) AND (a < c)) then
+				begin
+					вывод Меньшее число это a
+				end
+			иначе if ((b < a) AND (b < c)) then
+				begin
+					вывод Меньшее число это b
+				end
+			иначе if ((c < a) AND (c < b)) то
+					вывод Меньшее число это c
+				end;
+		end;
+Endвсё

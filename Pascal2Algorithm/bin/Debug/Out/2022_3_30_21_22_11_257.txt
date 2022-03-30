@@ -1,0 +1,19 @@
+//
+// ВАРИАНТ 2 №1
+//
+алг prog (арг <__args__>);
+	var sideA, sideB, sideC, areaTriangle, perimetrTriangle, halfPerimetr : real;
+	var message : string;
+Begin
+	вывод Введите стороны треугольника;
+	Readln(sideA, sideB, sideC);
+	
+	если (((sideA + sideB) > sideC) AND ((sideA + sideC) > sideB) AND ((sideB + sideC) > sideA)) то
+		perimetrTriangle:= sideA +sideB + sideC;
+		halfPerimetr:= perimetrTriangle / 2;
+		areaTriangle:= sqrt(halfPerimetr * (halfPerimetr - sideA) * (halfPerimetr - sideB) * (halfPerimetr) - sideC);
+		message:= 'Треугольник существует, его площадь: ' + areaTriangle.ToString();
+	end иначе message:= 'Треугольника не существует!';
+	
+	вывод essage
+Endвсё
